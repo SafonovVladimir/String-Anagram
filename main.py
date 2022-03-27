@@ -3,7 +3,7 @@ E.g. "a1bcd efg!h" => "d1cba hgf!e"
 Use Latin alphabet for test only.'''
 
 text = 'a1bcd efg!h lkjhdf7,j  zdf121aasf'
-print(text)
+print(f'Text for Anagram --> {text}')
 
 
 def only_alphabet_revers(word):
@@ -22,20 +22,16 @@ def only_alphabet_revers(word):
             # print(list_res)
             i += 1
             j -= 1
-    new_string = ''.join(list_res)
-    return new_string
+    return ''.join(list_res)
 
 
-def string_to_list(string):
-    list_res = list(string.split(" "))
-    return list_res
+new_list = list(text.split(" "))
 
-
-new_list = string_to_list(text)
 
 res = []
+
 for i in new_list:
     res.append(only_alphabet_revers(i))
 
 result = ' '.join(res)
-print(result)
+print(f'Result -->           {result}')
