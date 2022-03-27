@@ -27,7 +27,6 @@ def only_alphabet_revers(word):
 
 new_list = list(text.split(" "))
 
-
 res = []
 
 for i in new_list:
